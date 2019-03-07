@@ -14,7 +14,7 @@ public class Factory {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) {//damos valores y probamos
         // TODO code application logic here
         Dialogo miDialogo;
         miDialogo = Dialogo.crearDialogo(Dialogo.Tipo.CONSOLA);

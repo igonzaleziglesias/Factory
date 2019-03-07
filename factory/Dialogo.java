@@ -9,23 +9,23 @@ package factory;
  *
  * @author igonzaleziglesias
  */
-public abstract class Dialogo implements MetodosComunes{
+public abstract class Dialogo implements MetodosComunes{//creamos la clase dialogo abstracta implementando la interfaz metodoscomunes
    
     enum Tipo{CONSOLA,VENTANA}
     
-     public static Dialogo crearDialogo(Tipo tipo){
+     public static Dialogo crearDialogo(Tipo tipo){//elegimos la opcion ventana o consola
         Dialogo dialogoCreado;
         switch (tipo){
             case CONSOLA:
-                dialogoCreado=new ConsDialogo();
+                dialogoCreado=new ConsDialogo();//dialogo por consola
                 return dialogoCreado;
             case VENTANA:
-                dialogoCreado= new WinDialogo();
+                dialogoCreado= new WinDialogo();//dialogo por ventana
                 return dialogoCreado;
             default:
                 dialogoCreado=null;
                 
         }
-        return dialogoCreado;
+        return dialogoCreado;//devolvemos un dialogo
     }
 }

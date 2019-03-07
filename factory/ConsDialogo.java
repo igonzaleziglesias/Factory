@@ -9,10 +9,10 @@ package factory;
  *
  * @author igonzaleziglesias
  */
-public class ConsDialogo extends Dialogo {
+public class ConsDialogo extends Dialogo {//extiende de la superclase Dialogo
 
     @Override
-    public void mostrar(String mensage) {
+    public void mostrar(String mensage) {//definimos el metodo a usar
         System.out.println(mensage);
     }
     

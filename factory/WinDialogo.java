@@ -11,10 +11,10 @@ import javax.swing.JOptionPane;
  *
  * @author igonzaleziglesias
  */
-public class WinDialogo extends Dialogo {
+public class WinDialogo extends Dialogo {//extiende de la superclase Dialogo
 
     @Override
-    public void mostrar(String mensage) {
+    public void mostrar(String mensage) {//definimos el metodo a usar
         JOptionPane.showMessageDialog(null,mensage);
     }
 }

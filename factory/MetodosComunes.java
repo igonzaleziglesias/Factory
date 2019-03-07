@@ -9,6 +9,6 @@ package factory;
  *
  * @author igonzaleziglesias
  */
-public interface MetodosComunes {
+public interface MetodosComunes {//interfaz con el metodo a utilzar
     public void mostrar(String mensage);
 }
